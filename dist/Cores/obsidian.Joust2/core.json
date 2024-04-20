@@ -8,7 +8,7 @@
             "author": "obsidian",
             "url": "https://github.com/obsidian-dot-dev/openFPGA-Joust2",
             "version": "0.9.0",
-            "date_release": "2024-03-09"
+            "date_release": "2024-04-20"
         },
         "framework": {
             "target_product": "Analogue Pocket",
