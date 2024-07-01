@@ -67,6 +67,10 @@ To generate the `.rom` format binaries used by this core, you must use the MRA f
 
 ## History
 
+v0.9.1
+* No functional changes.
+* Support integration into "Combined" core.
+
 v0.9.0
 * Initial Release.
 

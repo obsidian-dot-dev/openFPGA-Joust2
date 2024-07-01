@@ -560,12 +560,12 @@ always @(posedge clk_core_6) begin
     video_de_reg <= 0;
 
     // Landscape by default, portrait where required.
-    video_rgb_reg <= 24'd0;
+    video_rgb_reg <= {8'h0, 3'b011, 13'h0};
     if (board_variant == GAME_ID_JOUST2) begin
-        video_rgb_reg <= {8'h0, 3'b001, 13'h0};
+        video_rgb_reg <= {8'h0, 3'b100, 13'h0};
 	end
     else if (board_variant == GAME_ID_TURKEY_SHOOT) begin
-        video_rgb_reg <= {8'h0, 3'b010, 13'h0};
+        video_rgb_reg <= {8'h0, 3'b101, 13'h0};
     end
 
     if (~(vblank_core || hblank_core)) begin
